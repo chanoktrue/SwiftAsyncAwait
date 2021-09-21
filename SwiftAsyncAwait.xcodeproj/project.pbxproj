@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD74E3B726F9B9ED00851012 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD74E3B626F9B9ED00851012 /* UserModel.swift */; };
+		CD74E3B926F9BA1E00851012 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD74E3B826F9BA1E00851012 /* UserService.swift */; };
+		CD74E3BB26F9BA7800851012 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD74E3BA26F9BA7800851012 /* UserViewModel.swift */; };
 		CDC81F4326F9ADB50024E759 /* SwiftAsyncAwaitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC81F4226F9ADB50024E759 /* SwiftAsyncAwaitApp.swift */; };
 		CDC81F4526F9ADB50024E759 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC81F4426F9ADB50024E759 /* ContentView.swift */; };
 		CDC81F4726F9ADB80024E759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC81F4626F9ADB80024E759 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD74E3B626F9B9ED00851012 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		CD74E3B826F9BA1E00851012 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		CD74E3BA26F9BA7800851012 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		CDC81F3F26F9ADB50024E759 /* SwiftAsyncAwait.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAsyncAwait.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC81F4226F9ADB50024E759 /* SwiftAsyncAwaitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAsyncAwaitApp.swift; sourceTree = "<group>"; };
 		CDC81F4426F9ADB50024E759 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +38,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD74E3B226F9B99E00851012 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD74E3B626F9B9ED00851012 /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CD74E3B326F9B9A500851012 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CD74E3BA26F9BA7800851012 /* UserViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CD74E3B426F9B9AC00851012 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CDC81F4426F9ADB50024E759 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CD74E3B526F9B9C300851012 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CD74E3B826F9BA1E00851012 /* UserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		CDC81F3626F9ADB50024E759 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +89,11 @@
 		CDC81F4126F9ADB50024E759 /* SwiftAsyncAwait */ = {
 			isa = PBXGroup;
 			children = (
+				CD74E3B426F9B9AC00851012 /* Views */,
+				CD74E3B326F9B9A500851012 /* ViewModels */,
+				CD74E3B526F9B9C300851012 /* Services */,
+				CD74E3B226F9B99E00851012 /* Models */,
 				CDC81F4226F9ADB50024E759 /* SwiftAsyncAwaitApp.swift */,
-				CDC81F4426F9ADB50024E759 /* ContentView.swift */,
 				CDC81F4626F9ADB80024E759 /* Assets.xcassets */,
 				CDC81F4826F9ADB80024E759 /* Preview Content */,
 			);
@@ -137,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD74E3B926F9BA1E00851012 /* UserService.swift in Sources */,
 				CDC81F4526F9ADB50024E759 /* ContentView.swift in Sources */,
 				CDC81F4326F9ADB50024E759 /* SwiftAsyncAwaitApp.swift in Sources */,
+				CD74E3BB26F9BA7800851012 /* UserViewModel.swift in Sources */,
+				CD74E3B726F9B9ED00851012 /* UserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +321,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +351,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
